@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Dhikr Counter</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">أذكار</a>
+                </div>
+
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Digital Dhikr</a></li>
+                    <li class="nav-item"><a href="aftersalah.html" class="nav-link">After Salah</a></li>
+                    <li class="nav-item"><a href="maintenance.html" class="nav-link">More Adhkar</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-container">
+            <!-- Added header section with title -->
+            <div class="title">
+                <h1>📿 Digital Dhikr Counter</h1>
+                <p class="subtitle">Track your daily remembrance of Allah.</p>
+            </div>
+
+            <div class="hadith-section">
+                <pre><i>The Prophet ﷺ said:</i>  
+    “When you pass by the gardens of Paradise, then graze therein.”
+<i>The companions asked:</i>
+    “What are the gardens of Paradise?” 
+<i>He said:</i>
+    “Circles of dhikr.”</pre>
+                <p class="references">— (Jāmi‘ at-Tirmidhī, 3510; graded ḥasan)</p>
+            </div>
+
+            <!-- Grid wrapper for all dhikr boxes -->
+            <section class="boxes-grid">
+                <!-- Istighfar (Astaghfirullah) -->
+                <div class="tasbih-box" id="istighfarBox" data-type="istighfar">
+                    <div class="box-header">
+                        <h2>Astaghfirullah</h2>
+                        <p class="arabic">أَسْتَغْفِرُ ٱللَّٰهَ</p>
+                    </div>
+                    <div class="count" id="istighfarCount">0</div>
+                    <div class="buttons">
+                        <button class="btn btn-decrement" onclick="decrement('istighfar')"><b>-</b></button>
+                        <button class="btn btn-increment" onclick="increment('istighfar')"><b>+</b></button>
+                        <button class="btn btn-reset" onclick="reset('istighfar')">Reset</button>
+                    </div>
+                </div>
+
+                <!-- Tasbih (SubhanAllah) -->
+                <div class="tasbih-box" id="tasbihBox" data-type="tasbih">
+                    <div class="box-header">
+                        <h2>SubhanAllah</h2>
+                        <p class="arabic">سُبْحَانَ ٱللَّٰهِ</p>
+                    </div>
+                    <div class="count" id="tasbihCount">0</div>
+                    <div class="buttons">
+                        <button class="btn btn-decrement" onclick="decrement('tasbih')"><b>-</b></button>
+                        <button class="btn btn-increment" onclick="increment('tasbih')"><b>+</b></button>
+                        <button class="btn btn-reset" onclick="reset('tasbih')">Reset</button>
+                    </div>
+                </div>
+            
+                <!-- Tahmeed (Alhamdulillah) -->
+                <div class="tasbih-box" id="tahmeedBox" data-type="tahmeed">
+                    <div class="box-header">
+                        <h2>Alhamdulillah</h2>
+                        <p class="arabic">ٱلْحَمْدُ لِلَّٰهِ</p>
+                    </div>
+                    <div class="count" id="tahmeedCount">0</div>
+                    <div class="buttons">
+                        <button class="btn btn-decrement" onclick="decrement('tahmeed')"><b>-</b></button>
+                        <button class="btn btn-increment" onclick="increment('tahmeed')"><b>+</b></button>
+                        <button class="btn btn-reset" onclick="reset('tahmeed')">Reset</button>
+                    </div>
+                </div>
+            
+                <!-- Takbeer (Allahu Akbar) -->
+                <div class="tasbih-box" id="takbeerBox" data-type="takbeer">
+                    <div class="box-header">
+                        <h2>Allahu Akbar</h2>
+                        <p class="arabic">الله أكبر</p>
+                    </div>
+                    <div class="count" id="takbeerCount">0</div>
+                    <div class="buttons">
+                        <button class="btn btn-decrement" onclick="decrement('takbeer')"><b>-</b></button>
+                        <button class="btn btn-increment" onclick="increment('takbeer')"><b>+</b></button>
+                        <button class="btn btn-reset" onclick="reset('takbeer')">Reset</button>
+                    </div>
+                </div>
+            
+                <!-- Tahleel (La ilaha illa-llah) -->
+                <div class="tasbih-box" id="tahleelBox" data-type="tahleel">
+                    <div class="box-header">
+                        <h2>La ilaha illa-llah</h2>
+                        <p class="arabic">لَا إِلَٰهَ إِلَّا ٱللَّٰهُ</p>
+                    </div>
+                    <div class="count" id="tahleelCount">0</div>
+                    <div class="buttons">
+                        <button class="btn btn-decrement" onclick="decrement('tahleel')"><b>-</b></button>
+                        <button class="btn btn-increment" onclick="increment('tahleel')"><b>+</b></button>
+                        <button class="btn btn-reset" onclick="reset('tahleel')">Reset</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 | By m.Abangon</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
