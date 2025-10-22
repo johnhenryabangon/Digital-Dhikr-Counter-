@@ -1398,3 +1398,13 @@ ol {
     transform: translateY(0);
   }
 }
+
+
+.notice {
+  text-align: justify;
+  font-size: 0.9rem;
+  color: var(--color-[]-text-secondary);
+  background-color: var(--color-bg-1);
+  opacity: 0.9;
+  padding: 20px 15px;
+}
