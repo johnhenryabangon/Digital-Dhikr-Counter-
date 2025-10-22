@@ -392,6 +392,10 @@ pre code {
   padding: 0;
 }
 
+pre i {
+  font-size: var(--font-size-md)
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -1398,7 +1402,6 @@ ol {
     transform: translateY(0);
   }
 }
-
 
 .notice {
   text-align: justify;
